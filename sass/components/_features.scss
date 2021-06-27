@@ -1,0 +1,10 @@
+.features__item {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+  color: var(--second-colour);
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}

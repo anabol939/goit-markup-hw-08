@@ -1,0 +1,44 @@
+.herro {
+  background-color: var(--background-colour);
+  text-align: center;
+  padding-bottom: 200px;
+  padding-top: 200px;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/herro/Img.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.herro__link {
+  border-radius: 4px;
+  &:not(:last-child) {
+    margin-right: 8px;
+  }
+}
+
+.herro__portfolio {
+  text-align: center;
+  padding-bottom: 94px;
+  padding-top: 94px;
+}
+
+.herro__title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+
+  color: var(--first-colour);
+  margin-bottom: 30px;
+
+  text-transform: uppercase;
+}
+
+.herro__list {
+  display: flex;
+  margin-bottom: 56px;
+  justify-content: center;
+}
