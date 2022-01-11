@@ -63,10 +63,28 @@ img {
 }
 
 .container {
-  width: 1200px;
-  margin: 0 auto;
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 .header__container {
@@ -731,21 +749,67 @@ link:focus {
 }
 
 .herro {
+  padding-top: 118px;
+  padding-bottom: 118px;
+  background-color: var(--background-colour);
+  text-align: center;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/herro/Img.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media screen and (min-width: 768px) {
+  .herro {
+    padding-top: 118px;
+    padding-bottom: 118px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .herro {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+}
+
+.herro__title {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.61;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--first-colour);
+}
+
+@media screen and (min-width: 1200px) {
+  .herro__title {
+    font-size: 44px;
+    line-height: 1.36;
+  }
+}
+
+/*.herro {
   background-color: var(--background-colour);
   text-align: center;
   padding-bottom: 200px;
   padding-top: 200px;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/herro/Img.jpg);
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/herro/Img.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .herro__link {
   border-radius: 4px;
-}
-
-.herro__link:not(:last-child) {
-  margin-right: 8px;
+  &:not(:last-child) {
+    margin-right: 8px;
+  }
 }
 
 .herro__portfolio {
@@ -759,8 +823,10 @@ link:focus {
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
+
   color: var(--first-colour);
   margin-bottom: 30px;
+
   text-transform: uppercase;
 }
 
@@ -769,7 +835,7 @@ link:focus {
   margin-bottom: 56px;
   justify-content: center;
 }
-
+*/
 .features {
   padding-top: 94px;
   padding-bottom: 47px;

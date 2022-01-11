@@ -2,6 +2,7 @@
   padding-top: 94px;
   padding-bottom: 47px;
 }
+
 .features-icons {
   margin-bottom: 30px;
   justify-content: center;
@@ -13,8 +14,9 @@
 }
 
 .features__list {
-  display: flex;
+  flex-direction: column;
 }
+
 .features__mini-title {
   font-weight: 700;
   font-size: 14px;
@@ -24,6 +26,7 @@
   color: var(--third-colour);
   margin-bottom: 10px;
 }
+
 .features__subtitle {
   font-weight: 400;
   font-size: 14px;
@@ -31,3 +34,8 @@
   letter-spacing: 0.03em;
   color: var(--second-colour);
 }
+
+.features__list {
+  flex-direction: column;
+}
+/*# sourceMappingURL=about_features.css.map */
