@@ -135,6 +135,7 @@ footer input {
 .signup__wrap {
   align-items: center;
   display: flex;
+  flex-direction: column;
 }
 
 .signup__wrap .footer__icons {
