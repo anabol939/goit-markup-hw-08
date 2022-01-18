@@ -74,14 +74,15 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer .sign__btn {
+  margin-top: 20px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
 }
-.header__button{
+.header__button {
   display: inline-flex;
   border: none;
   margin: 0;
   padding: 0;
-  background-color:transparent;
+  background-color: transparent;
 }

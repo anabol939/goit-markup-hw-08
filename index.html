@@ -228,11 +228,27 @@
               <picture>
                 <source
                   srcset="
-                    ./images/tel/taem/1x/img.jpg 1x,
-                    /images/tel/taem/2x/img.jpg  2x
+                    ./images/comp/team/1x/img.jpg    1x,
+                    ./images/comp/team/2x/img@2x.jpg 2x
                   "
-                  media="480px" />
-                <img src="./images/section4/img3.jpg" alt="" width="270"
+                  media="(min-width:1024px)" />
+                <source
+                  srcset="
+                    ./images/tablet/team/1x/img.jpg    1x,
+                    ./images/tablet/team/2x/img@2x.jpg 2x
+                  "
+                  media="(min-width:768px)" />
+                <source
+                  srcset="
+                    ./images/tel/team/1x/img.jpg   1x,
+                    /images/tel/team/2x/img@2x.jpg 2x
+                  "
+                  media="(min-width:320px)" />
+                <img
+                  src="./images/tel/team/1x/img.jpg    1x,
+                    ./images/tel/team/2x/img@2x.jpg 2x"
+                  alt="team"
+                  width="100%"
               /></picture>
               <div class="team__meta">
                 <h3 class="team__title">Игорь Демьяненко</h3>
@@ -270,7 +286,31 @@
               </div>
             </li>
             <li class="team__item">
-              <img src="./images/section4/img.jpg" alt="" width="270" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/comp/team/1x/img.jpg      1x,
+                    ./images/comp/team/2x/img@2x-1.jpg 2x
+                  "
+                  media="(min-width:1024px)" />
+                <source
+                  srcset="
+                    ./images/tablet/team/1x/img.jpg      1x,
+                    ./images/tablet/team/2x/img@2x-1.jpg 2x
+                  "
+                  media="(min-width:768px)" />
+                <source
+                  srcset="
+                    ./images/tel/team/1x/img-1.jpg   1x,
+                    /images/tel/team/2x/img@2x-1.jpg 2x
+                  "
+                  media="(min-width:320px)" />
+                <img
+                  src="./images/tel/team/1x/img-1.jpg    1x,
+                    ./images/tel/team/2x/img@2x-1.jpg 2x"
+                  alt="team"
+                  width="100%"
+              /></picture>
               <div class="team__meta">
                 <h3 class="team__title">Ольга Репина</h3>
                 <p class="team__subtitle">Frontend Developer</p>
@@ -307,7 +347,31 @@
               </div>
             </li>
             <li class="team__item">
-              <img src="./images/section4/img1.jpg" alt="" width="270" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/comp/team/1x/img-2.jpg    1x,
+                    ./images/comp/team/2x/img@2x-2.jpg 2x
+                  "
+                  media="(min-width:1024px)" />
+                <source
+                  srcset="
+                    ./images/tablet/team/1x/img-2.jpg    1x,
+                    ./images/tablet/team/2x/img@2x-2.jpg 2x
+                  "
+                  media="(min-width:768px)" />
+                <source
+                  srcset="
+                    ./images/tel/team/1x/img-2.jpg   1x,
+                    /images/tel/team/2x/img@2x-2.jpg 2x
+                  "
+                  media="(min-width:320px)" />
+                <img
+                  src="./images/tel/team/1x/img-2.jpg    1x,
+                    ./images/tel/team/2x/img@2x-2.jpg 2x"
+                  alt="team"
+                  width="100%"
+              /></picture>
               <div class="team__meta">
                 <h3 class="team__title">Николай Тарасов</h3>
                 <p class="team__subtitle">Marketing</p>
@@ -344,7 +408,31 @@
               </div>
             </li>
             <li class="team__item">
-              <img src="./images/section4/img2.jpg" alt="" width="270" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/comp/team/1x/img-3.jpg    1x,
+                    ./images/comp/team/2x/img@2x-3.jpg 2x
+                  "
+                  media="(min-width:1024px)" />
+                <source
+                  srcset="
+                    ./images/tablet/team/1x/img-3.jpg    1x,
+                    ./images/tablet/team/2x/img@2x-3.jpg 2x
+                  "
+                  media="(min-width:768px)" />
+                <source
+                  srcset="
+                    ./images/tel/team/1x/img-3.jpg   1x,
+                    /images/tel/team/2x/img@2x-3.jpg 2x
+                  "
+                  media="(min-width:320px)" />
+                <img
+                  src="./images/tel/team/1x/img-3.jpg    1x,
+                    ./images/tel/team/2x/img@2x-3.jpg 2x"
+                  alt="team"
+                  width="100%"
+              /></picture>
               <div class="team__meta">
                 <h3 class="team__title">Михаил Ермаков</h3>
                 <p class="team__subtitle">UI Designer</p>
@@ -441,7 +529,7 @@
     </main>
     Footer
     <footer class="footer">
-      <div class="container footer__container">
+      <div class="footer__container">
         <div class="footer__wraper">
           <a
             class="logo-footer-link link logo-dark-teme logo-text-header"
@@ -595,5 +683,6 @@
       </div>
     </div>
     <script src="./js/model.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

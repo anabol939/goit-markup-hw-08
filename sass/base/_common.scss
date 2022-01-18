@@ -1,5 +1,10 @@
 body {
+  overflow-x: hidden;
+
   font-family: var(--main-font);
+}
+html {
+  overflow-x: hidden;
 }
 h1,
 h2,
