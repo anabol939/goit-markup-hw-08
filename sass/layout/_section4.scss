@@ -3,6 +3,7 @@
 }
 
 .team__meta {
+  width: 100%;
   padding-top: 30px;
   padding-bottom: 30px;
   padding-left: 32px;
@@ -39,14 +40,15 @@
   border-radius: 0px 0px 4px 4px;
   margin: 0 auto;
   background: var(--second-colour);
+}
+.team__item:not(:last-child) {
+  margin-bottom: 30px;
+}
 
-  &:not(:last-child) {
-    margin-bottom: 30px;
-  }
-  @media (min-width: 768px) {
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
+.team__list {
   @media (min-width: 1200px) {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
   }
 }

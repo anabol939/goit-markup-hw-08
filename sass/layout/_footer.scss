@@ -17,6 +17,9 @@ footer {
   @media (min-width: 768px) {
     margin-left: 75px;
   }
+  @media (min-width: 1200px) {
+    margin-right: 70px;
+  }
 }
 
 .adress__link {
@@ -60,6 +63,11 @@ footer {
     margin: 0;
     position: absolute;
     right: 90px;
+  }
+  @media (min-width: 1200px) {
+    width: 206px;
+    height: 80px;
+    position: static;
   }
 }
 
@@ -135,6 +143,10 @@ footer {
 
   text-align: center;
   color: var(--first-colour);
+  @media (min-width: 1200px) {
+    width: 358px;
+    margin-right: 12px;
+  }
 }
 footer input {
   background-color: var(--grey-bgc);
@@ -153,6 +165,9 @@ footer input {
     flex-direction: column;
     align-items: center;
   }
+  @media (min-width: 1200px) {
+    align-items: center;
+  }
 }
 
 .signup__wrap .footer__icons {
@@ -162,6 +177,10 @@ footer input {
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @media (min-width: 1200px) {
+    margin-left: 93px;
+  }
 }
 .main-footer-list {
   display: flex;
@@ -169,10 +188,3 @@ footer input {
 .logo-dark-teme {
   color: var(--first-colour);
 }
-// .footer__wraper {
-//   margin-right: 70px;
-// }
-// .footer__wraper-social {
-//   width: 206px;
-//   height: 80px;
-// }
