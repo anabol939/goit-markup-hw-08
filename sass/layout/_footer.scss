@@ -140,9 +140,17 @@ footer {
   border-radius: 4px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   width: 450px;
-
+  margin-top: 20px;
   text-align: center;
   color: var(--first-colour);
+
+  @media (min-width: 768px) {
+    max-width: 450px;
+    display: flex;
+    flex-direction: column;    
+    margin: auto;
+   
+  }
   @media (min-width: 1200px) {
     width: 358px;
     margin-right: 12px;
@@ -173,6 +181,9 @@ footer input {
 .signup__wrap .footer__icons {
   margin-left: 10px;
 }
+.signup__form{
+  align-items:flex-start;
+}
 .footer__form {
   display: flex;
   flex-direction: column;
@@ -187,4 +198,10 @@ footer input {
 }
 .logo-dark-teme {
   color: var(--first-colour);
+}
+.footer__form{
+  @media (min-width:768px) {
+    margin:60px auto 0;
+    
+  }
 }

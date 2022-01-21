@@ -36,6 +36,11 @@
   letter-spacing: 0.03em;
   color: var(--second-colour);
   text-align: center;
+
+  @media (min-width:768px) {
+    text-align: start;
+    
+  }
 }
 .features__item {
   font-family: Roboto;
@@ -73,6 +78,10 @@
 
   @media (min-width: 768px) {
     flex-direction: row;
+    flex-wrap: wrap;
+  }
+  @media (min-width: 1200px) {
+    flex-wrap: nowrap;
   }
 }
 

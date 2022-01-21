@@ -15,8 +15,8 @@
 }
 
 body {
-  overflow-x: hidden;
   font-family: var(--main-font);
+  overflow-x: hidden;
 }
 
 html {
@@ -76,7 +76,7 @@ img {
 
 @media (min-width: 1200px) {
   .container {
-    width: 1200px;
+    width: 100%;
   }
 }
 
@@ -109,7 +109,6 @@ img {
 @media (min-width: 1200px) {
   .header__container {
     margin: 0 auto;
-    width: 1200px;
   }
 }
 
@@ -967,13 +966,30 @@ link:focus {
   align-items: center;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-  margin: 0 auto;
+  margin-bottom: 30px;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 450px;
   background: var(--second-colour);
+  margin-bottom: 30px;
+}
+
+@media (min-width: 768px) {
+  .team__item {
+    margin: 15px;
+    max-width: 354px;
+  }
+}
+
+@media (min-width: 768px) {
+  .team__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 @media (min-width: 1200px) {
   .team__list {
-    display: flex;
     justify-content: space-between;
     margin: 0 auto;
   }
@@ -1199,8 +1215,18 @@ footer {
   border-radius: 4px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   width: 450px;
+  margin-top: 20px;
   text-align: center;
   color: var(--first-colour);
+}
+
+@media (min-width: 768px) {
+  .footer form {
+    max-width: 450px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -1242,6 +1268,10 @@ footer input {
   margin-left: 10px;
 }
 
+.signup__form {
+  align-items: flex-start;
+}
+
 .footer__form {
   display: flex;
   flex-direction: column;
@@ -1260,6 +1290,12 @@ footer input {
 
 .logo-dark-teme {
   color: var(--first-colour);
+}
+
+@media (min-width: 768px) {
+  .footer__form {
+    margin: 60px auto 0;
+  }
 }
 
 .features-icons {
@@ -1306,6 +1342,12 @@ footer input {
   text-align: center;
 }
 
+@media (min-width: 768px) {
+  .features__subtitle {
+    text-align: start;
+  }
+}
+
 .features__item {
   font-family: Roboto;
   font-style: normal;
@@ -1350,6 +1392,13 @@ footer input {
 @media (min-width: 768px) {
   .features__list {
     flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: 1200px) {
+  .features__list {
+    flex-wrap: nowrap;
   }
 }
 /*# sourceMappingURL=main.css.map */

@@ -4,7 +4,7 @@
   padding-left: 15px;
   padding-right: 15px;
   @media (min-width: 1200px) {
-    width: 1200px;
+    width: 100%;
   }
 }
 
@@ -25,11 +25,12 @@
   padding-right: 15px;
 
   @media (min-width: 768px) {
+    
     flex-direction: row;
     align-items: center;
   }
   @media (min-width: 1200px) {
     margin: 0 auto;
-    width: 1200px;
+    
   }
 }
