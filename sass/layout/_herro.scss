@@ -36,14 +36,14 @@
           rgba(47, 48, 58, 0.4)
         ),url(../images/tablet/hero/2x/img@2x.jpg)}
 
-  @media (min-width: 1200px) {
+  @media (min-width:1200px) {
     padding-top: 200px;
     padding-bottom: 200px;
     background-image: linear-gradient(
           to left,
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
-        ),url(../images/comp/hero/1x/img.jpg);}
+        ),url(../images/comp/hero/1x/img.jpg)}
 
         @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
