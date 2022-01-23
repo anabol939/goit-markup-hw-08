@@ -34,3 +34,28 @@
     
   }
 }
+.mobile-menu__container{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  padding: 48px 40px;
+  background-color:var(--first-colour);
+  z-index: 555;
+
+  transform: translateX(100%);
+  transition: transform 250ms linear;
+
+  @media (min-width:768px) {
+    display: none;
+    
+  }
+}
+.mobile-menu__container{
+  transform: translateX(0);
+}

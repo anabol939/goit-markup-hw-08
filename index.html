@@ -33,16 +33,6 @@
             href="./portfolio.html"
             ><span class="logo-text">Web</span>Studio</a
           >
-          <!-- <button type="button" class="header__button">
-<svg width="40px" height="40px" aria-label="переключатель мобильного меню
-">
-  <use href="/images/sprite.svg#icon-menu_24px"></use>
-  <use href="images/sprite.svg#icon-close"></use>
-</svg>
-
-
-          </button> -->
-
           <ul class="menu__list list">
             <li class="menu__item">
               <a class="menu__link menu__active-page link" href="./index.html"
@@ -88,7 +78,21 @@
             >
           </li>
         </ul>
-      </div>
+      </div> 
+      <button
+      type="button"
+      class="menu-toggle js-open-menu"
+      aria-expanded="false"
+      aria-controls="mobile-menu"
+    >
+      <svg width="40" height="40" aria-label="Переключатель мобильного меню" >
+        <use
+          class="nav-button__icon-menu"
+          href="./images/sprite.svg#icon-menu"
+          
+        ></use>
+      </svg>
+    </button>
     </header>
 
     <!--HERROW-->
@@ -633,7 +637,68 @@
         </div>
       </div>
     </footer>
-    <div class="backdrop is-hidden" data-modal>
+                <!--mobile menu--> 
+
+<div class="mobile-menu__container">
+  <button
+    type="button"
+    class="menu-toggle js-close-menu"
+    aria-expanded="false"
+    aria-controls="mobile-menu"
+  >
+    <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+      <use
+        class="nav-button__icon-menu"
+        href="./images/sprite.svg#icon-close-black"></use>
+      
+    </svg>
+  </button>
+    <ul class="nav-menu__list list  ">
+      <li class="nav-menu__items link">
+        <a href="./index.html" class="nav-menu__link link current">Студия</a>
+       </li>
+      <li class="nav-menu__items">
+        <a href="./portfolio.html" class="nav-menu__link link">Портфолио</a> 
+      </li>
+      <li class="nav-menu__items">
+        <a href="#" class="nav-menu__link link">Контакты</a> 
+      </li>
+    </ul>
+    <div class="contact-menu__wraper">
+<ul class="nav-menu__contact-list list" >
+  <li class="nav-menu__contact-items">
+
+    <a href="tel:+380961111111" class="nav-menu__contact-link">+380961111111</a>
+
+  </li>
+  <li class="nav-menu__contact-items">
+
+    <a href="mailto:info@devstudio.com" class="nav-menu__contact-link--colour">info@devstudio.com</a>
+
+  </li>
+</ul>
+<ul class="nav-menu__social-list list">
+  <li class="nav-menu__social-item">
+    <a href="#" class="nav-menu__social-link">Instagram</a>
+  </li>
+
+  <li class="nav-menu__social-item">
+    <a href="#" class="nav-menu__social-link">Twitter</a>
+  </li>
+
+  <li class="nav-menu__social-item">
+    <a href="#" class="nav-menu__social-link">Facebook</a>
+  </li>
+  
+  <li class="nav-menu__social-item">
+    <a href="#" class="nav-menu__social-link">Linkedin</a>
+  </li>
+</ul>
+    </div>
+</div>
+
+                    <!-- модэльное окно-->
+       <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <p class="model__text">Оставьте свои данные, мы вам перезвоним</p>
         <button type="button" class="modal__close-btn" data-modal-close>
@@ -707,6 +772,6 @@
     <div class="backdrop is-hidden" data-modal>
       <div class="menu__window"></div>
     </div>
-    <!-- <script src="./js/mobile-menu.js"></script> -->
+     <script src="./js/mobile-menu.js"></script> 
   </body>
 </html>
