@@ -50,17 +50,29 @@
     max-width: 354px;
     
   }
+  @media (min-width:1190px) {
+    margin: 17px;
+    
+  }
+  @media (min-width:1200px) {
+    margin: 15px;
+    
+  }
 }
 
 .team__list {
   @media (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
   }
   @media (min-width: 1200px) {
-    justify-content: space-between;
+    justify-content: center;
     margin: 0 auto;
   }
 }
 
-
+.team__img{
+  width: 100%;
+  height: auto;
+}

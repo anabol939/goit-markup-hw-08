@@ -66,3 +66,6 @@ color: var(--akcent-color);
     color: var(--akcent-color);
     
 }
+.nav-menu--open{
+    transform: translateX(0);
+}

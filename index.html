@@ -81,9 +81,9 @@
       </div> 
       <button
       type="button"
-      class="menu-toggle js-open-menu"
-      aria-expanded="false"
-      aria-controls="mobile-menu"
+      class="menu-toggle js-open-menu" 
+      data-menu-modal-open
+     
     >
       <svg width="40" height="40" aria-label="Переключатель мобильного меню" >
         <use
@@ -269,7 +269,7 @@
                     /images/tel/team/2x/img@2x.jpg 2x
                   "
                   media="(min-width:320px)" />
-                <img
+                <img class="team__img"
                   src="./images/tel/team/1x/img.jpg    1x,
                     ./images/tel/team/2x/img@2x.jpg 2x"
                   alt="team"
@@ -330,7 +330,7 @@
                     /images/tel/team/2x/img@2x-1.jpg 2x
                   "
                   media="(min-width:320px)" />
-                <img
+                <img class="team__img" 
                   src="./images/tel/team/1x/img-1.jpg    1x,
                     ./images/tel/team/2x/img@2x-1.jpg 2x"
                   alt="team"
@@ -391,7 +391,7 @@
                     /images/tel/team/2x/img@2x-2.jpg 2x
                   "
                   media="(min-width:320px)" />
-                <img
+                <img class="team__img" 
                   src="./images/tel/team/1x/img-2.jpg    1x,
                     ./images/tel/team/2x/img@2x-2.jpg 2x"
                   alt="team"
@@ -452,7 +452,7 @@
                     /images/tel/team/2x/img@2x-3.jpg 2x
                   "
                   media="(min-width:320px)" />
-                <img
+                <img class="team__img" 
                   src="./images/tel/team/1x/img-3.jpg    1x,
                     ./images/tel/team/2x/img@2x-3.jpg 2x"
                   alt="team"
@@ -639,12 +639,12 @@
     </footer>
                 <!--mobile menu--> 
 
-<div class="mobile-menu__container">
+<div class="mobile-menu__container" data-menu-modal >
   <button
     type="button"
     class="menu-toggle js-close-menu"
-    aria-expanded="false"
-    aria-controls="mobile-menu"
+    data-menu-modal-close
+    
   >
     <svg width="40" height="40" aria-label="Переключатель мобильного меню">
       <use
@@ -769,9 +769,6 @@
       </div>
     </div>
     <script src="./js/model.js"></script>
-    <div class="backdrop is-hidden" data-modal>
-      <div class="menu__window"></div>
-    </div>
-     <script src="./js/mobile-menu.js"></script> 
+    <script src="./js/mobile-menu.js"></script>   
   </body>
 </html>

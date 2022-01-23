@@ -7,15 +7,55 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../images/herro/Img.jpg);
+    url(../images/tel/hero/1x/img.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: linear-gradient(
+        to left,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ), url(../images/tel/hero/2x/img@2x.jpg)}
+
+      @media (min-width:768px) {
+        background-image: linear-gradient(
+          to left,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),url(../images/tablet/hero/1x/img.jpg)
+      }
+      @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          to left,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),url(../images/tablet/hero/2x/img@2x.jpg)}
 
   @media (min-width: 1200px) {
     padding-top: 200px;
     padding-bottom: 200px;
+    background-image: linear-gradient(
+          to left,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),url(../images/comp/hero/1x/img.jpg);}
+
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: linear-gradient(
+            to left,
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)
+          ),url(../images/comp/hero/2x/img@2x.jpg)}
+  
   }
-}
+
 
 .herro__title {
   font-family: Roboto;

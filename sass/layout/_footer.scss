@@ -183,6 +183,8 @@ footer input {
 }
 .signup__form{
   align-items:flex-start;
+  width: -webkit-fill-available;
+  max-width: 450px;
 }
 .footer__form {
   display: flex;
