@@ -24,6 +24,7 @@
   color: var(--third-colour);
   margin-bottom: 10px;
   text-align: center;
+  margin-left: 15px;
 
   @media (min-width: 768px) {
     text-align: left;
@@ -35,7 +36,9 @@
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--second-colour);
-  text-align: center;
+  
+  margin-left: 15px;
+  margin-bottom: 30px;
 
   @media (min-width:768px) {
     text-align: start;

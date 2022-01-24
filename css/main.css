@@ -142,6 +142,7 @@ img {
 }
 
 .model-btn {
+  cursor: pointer;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: none;
@@ -198,6 +199,8 @@ img {
 }
 
 .sign__btn {
+  cursor: pointer;
+  border: none;
   width: 200px;
   height: 50px;
   background: var(--akcent-color);
@@ -328,9 +331,8 @@ img {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  max-width: 528px;
-  width: 80%;
-  min-height: 581px;
+  height: 609px;
+  width: 450px;
   background-color: var(--first-colour);
   padding: 40px;
 }
@@ -358,6 +360,10 @@ img {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
+}
+
+.modal-link__check-desc {
+  color: var(--akcent-color);
 }
 
 .model__text {
@@ -468,11 +474,12 @@ img {
 }
 
 .modal__check-desc {
+  color: var(--second-colour);
   display: flex;
   align-items: center;
   font-family: inherit;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   text-align: center;
@@ -507,6 +514,7 @@ img {
 }
 
 .modal-form-btn {
+  border: none;
   min-width: 200px;
   min-height: 50px;
   align-self: center;
@@ -623,8 +631,9 @@ img {
 }
 
 .menu-toggle {
+  cursor: pointer;
   position: absolute;
-  top: 10px;
+  top: 30px;
   right: 15px;
   display: inline-flex;
   margin: 0;
@@ -721,9 +730,29 @@ link:focus {
 }
 
 .header-icons-tel {
-  width: 10px;
-  height: 16px;
-  margin-right: 10px;
+  width: 14px;
+  margin-right: 8px;
+}
+
+@media (min-width: 1200px) {
+  .header-icons-tel {
+    width: 10px;
+    height: 16px;
+    margin-right: 10px;
+  }
+}
+
+.header-icons {
+  width: 14px;
+  margin-right: 8px;
+}
+
+@media (min-width: 1200px) {
+  .header-icons {
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+  }
 }
 
 .menu__active-page {
@@ -735,12 +764,6 @@ link:focus {
 
 .menu__active-page:visited {
   color: var(--akcent-color);
-}
-
-.header-icons {
-  width: 16px;
-  height: 12px;
-  margin-right: 10px;
 }
 
 .contact__links-item {
@@ -970,20 +993,9 @@ link:focus {
   padding-top: 94px;
 }
 
-.herro__title {
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  letter-spacing: 0.06em;
-  color: var(--first-colour);
-  margin-bottom: 30px;
-  text-transform: uppercase;
-}
-
 .herro__list {
   display: flex;
-  flex-wrap: wrap;
-  flex-basis: calc(100% / 3);
+  justify-content: center;
 }
 
 @media (min-width: 1200px) {
@@ -1035,6 +1047,7 @@ link:focus {
   color: var(--third-colour);
   margin-bottom: 30px;
   margin-top: 60px;
+  padding-top: 60px;
 }
 
 @media (min-width: 1200px) {
@@ -1066,7 +1079,7 @@ link:focus {
 }
 
 .team__meta {
-  width: 100%;
+  width: 450px;
   padding-top: 30px;
   padding-bottom: 30px;
   padding-left: 32px;
@@ -1143,7 +1156,7 @@ link:focus {
 }
 
 .team__img {
-  width: 100%;
+  width: 450px;
   height: auto;
 }
 
@@ -1167,7 +1180,7 @@ link:focus {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   box-sizing: border-box;
-  width: 100%;
+  width: 210px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1202,10 +1215,8 @@ link:focus {
 }
 
 .partners__item {
-  flex-basis: calc((100% / 2) - 30px);
+  flex-basis: calc((100% / 2) - 0px);
   margin-bottom: 30px;
-  margin-left: 15px;
-  margin-right: 15px;
 }
 
 @media (min-width: 768px) {
@@ -1368,7 +1379,8 @@ footer {
   padding: 15px 16px;
   border-radius: 4px;
   border: 1px solid rgba(255, 255, 255, 0.3);
-  width: 450px;
+  width: 100%;
+  max-width: 450px;
   margin-top: 20px;
   text-align: center;
   color: var(--first-colour);
@@ -1424,7 +1436,7 @@ footer input {
 
 .signup__form {
   align-items: flex-start;
-  width: -webkit-fill-available;
+  width: 100%;
   max-width: 450px;
 }
 
@@ -1481,6 +1493,7 @@ footer input {
   color: var(--third-colour);
   margin-bottom: 10px;
   text-align: center;
+  margin-left: 15px;
 }
 
 @media (min-width: 768px) {
@@ -1495,7 +1508,8 @@ footer input {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--second-colour);
-  text-align: center;
+  margin-left: 15px;
+  margin-bottom: 30px;
 }
 
 @media (min-width: 768px) {

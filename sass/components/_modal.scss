@@ -3,9 +3,8 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  max-width: 528px;
-  width: 80%;
-  min-height: 581px;
+  height: 609px;
+  width:450px;
   background-color: var(--first-colour);
   padding: 40px;
 }
@@ -33,4 +32,7 @@
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
+}
+.modal-link__check-desc{
+  color:var(--akcent-color);
 }

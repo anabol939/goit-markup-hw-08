@@ -89,22 +89,21 @@
   padding-top: 94px;
 }
 
-.herro__title {
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  letter-spacing: 0.06em;
+// .herro__title {
+//   font-weight: 900;
+//   font-size: 44px;
+//   line-height: 1.36;
+//   letter-spacing: 0.06em;
 
-  color: var(--first-colour);
-  margin-bottom: 30px;
+//   color: var(--first-colour);
+//   margin-bottom: 30px;
 
-  text-transform: uppercase;
-}
+//   text-transform: uppercase;
+// }
 
 .herro__list {
   display: flex;
-  flex-wrap: wrap;
-  flex-basis: calc(100% / 3);
+  justify-content: center;
 
   @media (min-width: 1200px) {
     display: flex;
