@@ -111,9 +111,11 @@
 .herro__list {
   display: flex;
   flex-wrap: wrap;
+  margin-bottom: 46px;
 
   @media (min-width: 768px) {
     justify-content: center;
+    margin-bottom: 36px;
   }
 
   @media (min-width: 1200px) {
