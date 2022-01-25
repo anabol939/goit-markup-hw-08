@@ -1,71 +1,68 @@
-.nav-menu__link{
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 40px;
-    line-height: 1.17;
-    text-align: center;
-    letter-spacing: 0.02em;
-    
-    color:var(--fourth-color);
-    &:hover,
-    &:focus{
-        color: var(--akcent-color);
-    }
+.nav-menu__link {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.02em;
 
-}
-.nav-menu__list{
-    margin-bottom: 306px;
-}
-.nav-menu__items:not(:last-child){
-    margin-bottom: 32px;
-}
-.nav-menu__social-item:not(:last-child){
-      margin-right: 20px;
-
-}
-.nav-menu__contact-list{
-    margin-bottom: 64px;
-}
-.nav-menu__contact-items{
-margin-bottom: 32px;
-}
-
-.nav-menu__social-list{
- display: flex;
-}
-
-.nav-menu__contact-link{
- font-family: Roboto;
-font-style: normal;
-font-weight: 500;
-font-size: 34px;
-line-height: 1.17;
-letter-spacing: 0.02em;
-color: var(--akcent-color);
-}
-
-.nav-menu__contact-link--colour{
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 28px;
-    letter-spacing: 0.02em;
-    
-    color: var(--second-colour);
-
-}
-.nav-menu__social-link{
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 1.22;
-    letter-spacing: 0.02em;
+  color: var(--fourth-color);
+  &:hover,
+  &:focus {
     color: var(--akcent-color);
-    
+  }
 }
-.nav-menu--open{
-    transform: translateX(0);
+.nav-menu__list {
+  margin-bottom: 306px;
+}
+.nav-menu__items:not(:last-child) {
+  margin-bottom: 32px;
+}
+.nav-menu__social-item:not(:last-child) {
+  margin-right: 20px;
+}
+.nav-menu__contact-list {
+  margin-bottom: 64px;
+}
+.nav-menu__contact-items {
+  margin-bottom: 32px;
+}
+
+.nav-menu__social-list {
+  display: flex;
+}
+
+.nav-menu__contact-link {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: var(--akcent-color);
+}
+
+.nav-menu__contact-link--colour {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.02em;
+
+  color: var(--second-colour);
+}
+.nav-menu__social-link {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: var(--akcent-color);
+}
+.nav-menu--open {
+  transform: translateX(0);
+  display: flex;
 }

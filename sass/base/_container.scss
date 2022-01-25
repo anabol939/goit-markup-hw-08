@@ -25,34 +25,33 @@
   padding-right: 15px;
 
   @media (min-width: 768px) {
-    
     flex-direction: row;
     align-items: center;
   }
   @media (min-width: 1200px) {
     margin: 0 auto;
-    width:1200px;
+    width: 1200px;
   }
 }
-.mobile-menu__container{
+.mobile-menu__container {
+  display: none;
   position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
-  display: flex;
+
   flex-direction: column;
   justify-content: space-between;
 
   padding: 48px 40px;
-  background-color:var(--first-colour);
+  background-color: var(--first-colour);
   z-index: 555;
 
   transform: translateX(100%);
   transition: transform 250ms linear;
 
-  @media (min-width:768px) {
+  @media (min-width: 768px) {
     display: none;
-    
   }
 }

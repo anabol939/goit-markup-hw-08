@@ -109,12 +109,12 @@ img {
 }
 
 .mobile-menu__container {
+  display: none;
   position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
-  display: flex;
   flex-direction: column;
   justify-content: space-between;
   padding: 48px 40px;
@@ -643,6 +643,7 @@ img {
 
 .nav-menu--open {
   transform: translateX(0);
+  display: flex;
 }
 
 .menu-toggle {
@@ -697,8 +698,12 @@ img {
   margin-left: 30px;
 }
 
-.cardset__item:hover {
+.cardset__item:hover, .cardset__item:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.cardset__item:hover .overlay, .cardset__item:focus .overlay {
+  transform: translateY(0);
 }
 
 .cardset__item:nth-last-child(-n + 3) {
@@ -749,8 +754,8 @@ link:focus {
   overflow: hidden;
 }
 
-.cardset__link:hover.overlay,
-.cardset__link:focus.overlay {
+.cardset__link:hover .overlay,
+.cardset__link:focus .overlay {
   transform: translateY(0%);
 }
 
@@ -954,26 +959,26 @@ link:focus {
   padding-bottom: 118px;
   background-color: var(--background-colour);
   text-align: center;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/tel/hero/1x/img.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/tel/hero/1x/img.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .herro {
-    background-image: linear-gradient(to left, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/tel/hero/2x/img@2x.jpg);
+    background-image: linear-gradient(to left, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/tel/hero/2x/img@2x.jpg);
   }
 }
 
 @media (min-width: 768px) {
   .herro {
-    background-image: linear-gradient(to left, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/tablet/hero/1x/img.jpg);
+    background-image: linear-gradient(to left, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/tablet/hero/1x/img.jpg);
   }
 }
 
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .herro {
-    background-image: linear-gradient(to left, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/tablet/hero/2x/img@2x.jpg);
+    background-image: linear-gradient(to left, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/tablet/hero/2x/img@2x.jpg);
   }
 }
 
@@ -981,13 +986,13 @@ link:focus {
   .herro {
     padding-top: 200px;
     padding-bottom: 200px;
-    background-image: linear-gradient(to left, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/comp/hero/1x/img.jpg);
+    background-image: linear-gradient(to left, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/comp/hero/2x/hero@2x.img.jpg);
   }
 }
 
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .herro {
-    background-image: linear-gradient(to left, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/comp/hero/2x/img@2x.jpg);
+    background-image: linear-gradient(to left, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/comp/hero/2x/hero@2x.img.jpg);
   }
 }
 

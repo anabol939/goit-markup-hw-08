@@ -11,24 +11,22 @@
   // height: 10px;
   margin-right: 8px;
 
-  @media (min-width:1200px) {
+  @media (min-width: 1200px) {
     width: 10px;
     height: 16px;
     margin-right: 10px;
   }
- 
 }
 .header-icons {
   width: 14px;
   // height: 10px;
   margin-right: 8px;
 
-  @media (min-width:1200px) {
+  @media (min-width: 1200px) {
     width: 16px;
     height: 12px;
     margin-right: 10px;
   }
- 
 }
 .menu__active-page {
   color: var(--akcent-color);
@@ -39,7 +37,6 @@
     color: var(--akcent-color);
   }
 }
-
 
 .contact__links-item {
   fill: var(--vectors);
@@ -133,7 +130,6 @@
     fill: var(--akcent-color);
   }
 
-  
   @media (min-width: 1200px) {
     padding-top: 32px;
     padding-bottom: 32px;
