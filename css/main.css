@@ -999,13 +999,13 @@ link:focus {
   .herro {
     padding-top: 200px;
     padding-bottom: 200px;
-    background-image: linear-gradient(to left, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../../goit-markup-hw-08/images/comp/hero/1x/img.jpg);
+    background-image: linear-gradient(to left, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../../goit-markup-hw-08/images/comp/hero/1x/hero1x.img.jpg);
   }
 }
 
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .herro {
-    background-image: linear-gradient(to left, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../../goit-markup-hw-08/images/comp/hero/2x/img@2x.jpg);
+    background-image: linear-gradient(to left, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../../goit-markup-hw-08/images/comp/hero/2x/hero@2x.img.jpg);
   }
 }
 
