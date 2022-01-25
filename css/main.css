@@ -972,26 +972,26 @@ link:focus {
   padding-bottom: 118px;
   background-color: var(--background-colour);
   text-align: center;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/tel/hero/1x/img.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../../goit-markup-hw-08/images/tel/hero/1x/img.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .herro {
-    background-image: linear-gradient(to left, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/tel/hero/2x/img@2x.jpg);
+    background-image: linear-gradient(to left, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../../goit-markup-hw-08/images/tel/hero/2x/img@2x.jpg);
   }
 }
 
 @media (min-width: 768px) {
   .herro {
-    background-image: linear-gradient(to left, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/tablet/hero/1x/img.jpg);
+    background-image: linear-gradient(to left, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../../goit-markup-hw-08/images/tablet/hero/1x/img.jpg);
   }
 }
 
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .herro {
-    background-image: linear-gradient(to left, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/tablet/hero/2x/img@2x.jpg);
+    background-image: linear-gradient(to left, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../../goit-markup-hw-08/images/tablet/hero/2x/img@2x.jpg);
   }
 }
 
