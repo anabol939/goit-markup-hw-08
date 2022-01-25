@@ -103,7 +103,12 @@
 
 .herro__list {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+
+  @media (min-width:768px) {  
+    justify-content: center;
+    
+  }
 
   @media (min-width: 1200px) {
     display: flex;
